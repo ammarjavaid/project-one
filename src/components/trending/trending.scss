@@ -1,0 +1,194 @@
+.trending{
+    // position: relative;
+    // position: absolute;
+    // top: 0;
+    // top: 0;
+    // left: 0;
+    // height: 100vh;
+    // width: 100%;
+    // color: #fff;
+    margin-top: 5rem;
+    .homeContainer{
+        position: relative;
+        .box{
+            .coverImage{
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 100vh;
+                z-index: -2;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100vh;
+                    z-index: 88;
+                    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+                }
+                img{
+                    width: 100vw;
+                    height: 100vh;
+                    object-fit: cover;
+                }
+            }
+            .content{
+                padding: 183px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @media screen and (max-width: 1140px) {
+                    padding:  90px 156px; 
+                }
+                @media screen and (max-width: 968px) {
+                    padding:  90px; 
+                }
+                @media screen and (max-width: 775px) {
+                    padding:  90px 50px; 
+                }
+                @media screen and (max-width: 675px) {
+                     display: grid;
+                     grid-template-columns: 1fr;
+                     padding: 90px;
+                    //  gap: 3rem;
+                }
+                @media screen and (max-width: 560px) {
+                    padding:  90px 50px; 
+                }
+                @media screen and (max-width: 450px) {
+                    padding:  90px 20px; 
+                }
+               .details{
+                h1{
+                    margin-top: 80px;
+                    font-size: 50px;
+                    text-transform: uppercase;
+                    font-weight: 800;
+                    background-image: url(../images/texure.jpg);
+                    background-repeat: repeat;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    -webkit-font-smoothing: antialiased;
+                    @media screen and (max-width: 775px) {
+                        font-size: 35px;
+                    }
+                }
+                p{
+                    font-size: 12px;
+                    line-height: 20px;
+                    padding-top: 20px;
+                }
+                .rating{
+                    margin: 10px 0;
+                    .icon{
+                        color: #e50813;
+                        margin-right: 5px;
+                    }
+                }
+                label{
+                    margin: 0 20px;
+                    font-size: 12px;
+                }
+                span{
+                    background-color: #6c757d;
+                    padding: 2px;
+                    color: #fff;
+                    font-weight: bold;
+                    font-size: 12px;
+                }
+                .cast{
+                    margin: 30px 0;
+                    line-height: 10px;
+                    h4{
+                        font-weight: 500;
+                        margin-bottom: 10px;
+                        font-size: 12px;
+                        span{
+                            color: #e50813;
+                            background: none;
+                        }
+                    }
+                }
+               }
+                .playButton{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 40px;
+                    @media screen and (max-width: 675px) {
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        margin-top: 10px;
+                    }
+                    button{
+                        cursor: pointer;
+                        padding: 0;
+                        margin: 0;
+                        background: none;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 18px;
+                        font-weight: 500;
+                        letter-spacing: 2px;
+                        transition: 0.5s;
+                        @media screen and (max-width: 968px) {
+                            font-size: 16px;
+                        }
+                        @media screen and (max-width: 675px) {
+                            font-size: 13px;
+                        }
+                        @media screen and (max-width: 420px) {
+                            font-size: 11px;
+                        }
+                        &:hover{
+                            .change{
+                                opacity: 1;
+                            }
+                        }
+                    }
+                    .img{
+                        position: relative;
+                    }
+                    img{
+                        width: 45px;
+                        height: 45px;
+                        margin-right: 20px;
+                        transition: 0.5s;
+                        @media screen and (max-width: 968px) {
+                            width: 40px;
+                            height: 40px;
+                        }
+                        @media screen and (max-width: 675px) {
+                            width: 30px;
+                            height: 30px;
+                        }
+                        @media screen and (max-width: 420px) {
+                            width: 25px;
+                            height: 25px;
+                        }
+                    }
+                }
+                .change{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    opacity: 0;
+                }
+                .primary-btn{
+                    background-color: #e50813;
+                    outline: none;
+                    border: none;
+                    color: #fff;
+                    padding: 9px 16px;
+                    font-weight: 500;
+                    font-size: 12px;
+                    border-radius: 2px;
+                    cursor: pointer;
+                  }
+            }
+        }
+    }
+}

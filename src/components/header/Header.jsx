@@ -24,13 +24,12 @@ export default function Header() {
                             <Link to="/"><img src={logo} alt='' /></Link>
                         </div>
                         <ul className={open ? "list" : 'flexul'}>
-                            <Link to="/" onClick={toggle}> Home </Link>
-                            <Link to="/series" onClick={toggle}> Series </Link>
-                            <Link to="/movies" onClick={toggle}> Movies </Link>
-                            <Link to="/pages" onClick={toggle}> Pages </Link>
-                            <Link to="/pricing" onClick={toggle}> Pricing </Link>
-                            <Link to="/contact" onClick={toggle}> Contact </Link>
-                            {/* <button className='link__btn'> Subscribe Now </button> */}
+                            <li onClick={toggle}> <Link to="/"> Home </Link> </li>
+                            <li onClick={toggle}> <Link to="/series"> Series </Link> </li>
+                            <li onClick={toggle}> <Link to="/movies"> Movies </Link> </li>
+                            <li onClick={toggle}> <Link to="/pages"> Pages </Link> </li>
+                            <li onClick={toggle}> <Link to="/pricing"> Pricing </Link> </li>
+                            <li onClick={toggle}> <Link to="/contact"> Contact </Link> </li>
                         </ul>
 
                     </nav>

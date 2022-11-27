@@ -1,5 +1,5 @@
 header{
-    height: 11vh;
+    height: 9vh;
     background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
     color: #fff;
     position: relative;
@@ -21,13 +21,16 @@ header{
     }
 
     .flexul{
-        a{
-            color: #fff;
-            font-size: 13px;
-            margin-left: 20px;
-            transition: 0.5s;
-            &:hover{
-                color: #e50813;
+        display: flex;
+        li{
+            a{
+                color: #fff;
+                font-size: 13px;
+                margin-left: 20px;
+                transition: 0.5s;
+                &:hover{
+                    color: #e50813;
+                }
             }
         }
         @media screen and (max-width: 968px) {
@@ -48,11 +51,14 @@ header{
         text-align: center;
         background-color: #e50813;
         transition: .5s ease-in-out;
-        a{
-            padding: 15px 0;
-            color: #fff;
-            letter-spacing: 2px;
-            text-transform: uppercase;
+        li{
+            padding: 1.5rem 0;
+            a{
+                padding: 15px 0;
+                color: #fff;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+            }
         }
         @media screen and (max-width: 600px) {
             width: 50%;
